@@ -8,9 +8,10 @@ pipeline
            		agent any
             		steps 
 			{
-				echo 'This is Build part'
-			
-				sh 'python app.py'
+				 echo 'This is Build part'
+                sh 'chmod 777 build.sh'
+                
+                sh './build.sh'
 				
             		}
             	
@@ -20,7 +21,9 @@ pipeline
 			agent any
 			steps
 			{
-				echo 'This is Test part'
+				echo  echo 'This is Deploy part'
+                sh 'chmod 777 run.sh'
+                sh './run.sh'
 			
 				sh 'python test.py'
 			}
