@@ -21,7 +21,7 @@ pipeline
 			agent any
 			steps
 			{
-				echo  echo 'This is Deploy part'
+				echo 'This is Deploy part'
                 sh 'chmod 777 run.sh'
                 sh './run.sh'
 			
