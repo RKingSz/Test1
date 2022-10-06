@@ -1,1 +1,1 @@
-sudo docker build . -t jenny24/app_jen:1
+sudo docker build . -t ricwal29/app_ric:1
