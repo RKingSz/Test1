@@ -16,7 +16,7 @@ pipeline
             		}
             	
         	}
-        stage('Test Stage')
+        stage('Deploy Stage')
 		{
 			agent any
 			steps
